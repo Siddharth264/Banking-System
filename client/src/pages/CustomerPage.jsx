@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import HomeImg from "../assets/home.svg";
 import Money from "../assets/money.svg";
 
-export default function Transactions() {
+export default function CustomerPage() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="flex gap-32 max-w-4xl mx-auto m-24 border-2 p-16 rounded-xl shadow-xl">
+    <div className="max-w-4xl mx-auto m-10">
+      <div className="flex gap-32 max-w-4xl mx-auto m-20 border-2 p-16 rounded-xl shadow-xl">
         <div className="flex-1">
           <h1 className="font-bold text-3xl text-center mt-5 mb-16">
             Customers

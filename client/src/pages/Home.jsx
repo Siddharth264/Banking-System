@@ -13,24 +13,24 @@ const Home = () => {
         <img src={BankImg} alt="" />
       </div>
       <div className=" flex justify-center gap-5 my-7 p-6">
-        <Link to="/transactions">
+        <Link to="/customer">
           <div className="flex gap-2 bg-slate-600 text-white p-3 rounded-lg cursor-pointer">
             <img src={Money} alt="" width="25px" />
-            <span>Transactions</span>
+            <span className="uppercase p-1">Banking</span>
           </div>
         </Link>
 
         <Link to="/">
           <div className="flex gap-2 bg-slate-600 text-white p-3 rounded-lg cursor-pointer">
             <img src={HomeImg} alt="" width="25px" />
-            <span>Home</span>
+            <span className="uppercase p-1">Home</span>
           </div>
         </Link>
 
         <Link to="/about">
           <div className="flex gap-2 bg-slate-600 text-white p-3 rounded-lg cursor-pointer">
             <img src={AboutImg} alt="" width="25px" />
-            <span>About</span>
+            <span className="uppercase p-1">About</span>
           </div>
         </Link>
       </div>
