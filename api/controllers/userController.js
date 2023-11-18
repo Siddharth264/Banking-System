@@ -33,6 +33,8 @@ const updateUser = async (req, res, next) => {
     const sender = await User.findOne({name: from});
     const reciever = await User.findOne({name: to});
 
+    if(sender === reciever) return next(customErrorHandler(401, 'Sender and reciever cant be same'))
+
     if(!sender || !reciever) return next(customErrorHandler(401, 'User not found'))
 
     const isSufficientBalance = sender.amount >= amount ? true : false
