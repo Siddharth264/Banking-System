@@ -8,6 +8,8 @@ export default defineConfig({
     proxy: {
       "/api": {
         target: "https://banking-system-two.vercel.app",
+        changeOrigin: true,
+        secure: false,
       },
     },
   },
