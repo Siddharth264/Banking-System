@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://banking-system-psi.vercel.app",
+        target: "https://banking-system-mm29qt0ja-siddharth264.vercel.app",
         secure: false,
       },
     },
